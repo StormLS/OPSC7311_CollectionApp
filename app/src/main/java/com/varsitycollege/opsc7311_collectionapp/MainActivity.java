@@ -29,8 +29,12 @@ public class MainActivity extends AppCompatActivity
     private Button btn_login;
     private TextView btn_forgotPassword;
 
-    EditText email;
-    EditText password;
+    private TextInputEditText email_TAGGED_;
+    private TextInputEditText password_TAGGED_;
+
+    private EditText email;
+    private EditText password;
+
     FirebaseAuth mAuth;
 
     @Override
@@ -39,9 +43,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        email = findViewById(R.id.email_input);
-       //email = (TextInputEditText)findViewById(R.id.email_input);
-        password = findViewById(R.id.password_input);
+        //email = findViewById(R.id.email_input);
+        email = (TextInputEditText)findViewById(R.id.email_input_TAGGED_);
+        //password = findViewById(R.id.password_input);
+        password = (TextInputEditText)findViewById(R.id.password_input_TAGGED_);
 
         btn_register = findViewById(R.id.btn_register);
         btn_login = findViewById(R.id.btn_login);
