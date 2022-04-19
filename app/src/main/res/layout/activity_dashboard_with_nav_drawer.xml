@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customColour1.5"
+    android:orientation="vertical"
+    tools:context=".dashboard">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_layout"
+        app:menu="@menu/navigation_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/customColourOne"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:logo="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Hello, User."
+                android:textColor="@color/customColourFive"
+                android:textSize="30dp"></TextView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:paddingRight="40dp"
+                android:text="MY DASHBOARD"
+                android:textColor="@color/white"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/login_container"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="375dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp">
+
+
+                    <ImageButton
+                        android:id="@+id/btn_mycollections"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_btn_dashboard_mycollections"
+                        android:src="@drawable/icon_mycollections">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/btn_allcatagories"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/custom_btn_dashboard_allcatagories"
+                        android:src="@drawable/icon_allcatagories"></ImageButton>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_analytics"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_btn_dashboard_analytics"
+                        android:src="@drawable/icon_analytics"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/btn_settings"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/custom_btn_dashboard_settings"
+                        android:src="@drawable/icon_settings"></ImageButton>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/thewineconpendiumbackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/applicationLogo"
+        android:layout_width="325dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_container"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/x1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:startIconDrawable="@drawable/mail"
+            app:startIconContentDescription="test"
+            android:hint="Email"
+            android:minHeight="48dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Password"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/btn_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password?"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button2"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_button"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

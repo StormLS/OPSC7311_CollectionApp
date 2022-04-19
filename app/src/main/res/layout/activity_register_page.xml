@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thewineconpendiumbackground"
+    android:orientation="vertical"
+    tools:context=".registerPage">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/login_container"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/createaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Create Account"
+            android:textColor="@color/customColourOne"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/surname_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Surname"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:hint="Password"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/confirmPassword_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Confirm Password"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/btn_alreadyMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:text="I'm already a member"
+            android:textStyle="italic" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163920022638",
+    "project_id": "wineconpendium-opsc7311",
+    "storage_bucket": "wineconpendium-opsc7311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163920022638:android:a0197fc480a127eeef6a7f",
+        "android_client_info": {
+          "package_name": "com.varsitycollege.opsc7311_collectionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163920022638-vt64s3e6n28caf48ufpq8360gcd68gj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDHG46XD1nKOnGxaB4aU2L00xoTR6PBrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163920022638-vt64s3e6n28caf48ufpq8360gcd68gj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
