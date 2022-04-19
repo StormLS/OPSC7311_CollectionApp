@@ -11,9 +11,9 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="480dp"
+        android:layout_height="550dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/login_container"
         android:elevation="20dp"
         android:orientation="vertical"
@@ -28,50 +28,81 @@
             android:textColor="@color/customColourOne"
             android:textSize="24dp" />
 
-        <EditText
-            android:id="@+id/email_input"
-            android:layout_width="200dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            app:startIconDrawable="@drawable/email_icon"
+            app:startIconContentDescription="test"
             android:hint="Email"
-            android:minHeight="48dp" />
+            android:minHeight="48dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/name_input"
-            android:layout_width="200dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            app:startIconDrawable="@drawable/name_icon"
+            app:startIconContentDescription="test"
             android:hint="Name"
-            android:minHeight="48dp" />
+            android:minHeight="48dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/surname_input"
-            android:layout_width="200dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            app:startIconDrawable="@drawable/surname_icon"
+            app:startIconContentDescription="test"
             android:hint="Surname"
-            android:minHeight="48dp" />
+            android:minHeight="48dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/surname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/password_input"
-            android:layout_width="200dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="18dp"
+            app:startIconDrawable="@drawable/password_icon"
+            app:startIconContentDescription="test"
             android:hint="Password"
-            android:minHeight="48dp" />
+            app:endIconMode="password_toggle">
+            android:minHeight="48dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/confirmPassword_input"
-            android:layout_width="200dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
             android:hint="Confirm Password"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            app:startIconDrawable="@drawable/confirmpassword_icon"
+            app:startIconContentDescription="test"
+            app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPassword_input"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btn_register"

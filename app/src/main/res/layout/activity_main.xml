@@ -35,12 +35,12 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            app:startIconDrawable="@drawable/mail"
-            app:startIconContentDescription="test"
             android:hint="Email"
-            android:minHeight="48dp">
+            android:minHeight="48dp"
+            app:startIconDrawable="@drawable/email_icon"
+            app:startIconContentDescription="test">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email_input_TAGGED_"
+                android:id="@+id/email_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -49,12 +49,14 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            app:startIconDrawable="@drawable/lock"
-            app:startIconContentDescription="test"
             android:hint="Password"
-            android:minHeight="48dp">
+            android:minHeight="48dp"
+            app:startIconDrawable="@drawable/password_icon"
+            app:startIconContentDescription="test"
+            app:endIconMode="password_toggle">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password_input_TAGGED_"
+                android:id="@+id/password_input"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
