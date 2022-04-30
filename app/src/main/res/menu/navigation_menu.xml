@@ -2,18 +2,42 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/menu_top" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_Collections"
+            android:title="Collections" />
+        <item
+            android:id="@+id/nav_Categories"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_Analytics"
+            android:title="Analytics" />
+    </group>
+
+    <group android:id="@+id/menu_middle" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Contact"
+            android:title="Contact"/>
         <item
             android:id="@+id/nav_FAQ"
             android:title="FAQ" />
         <item
-            android:id="@+id/nav_contact"
-            android:title="Contact Us" />
+            android:id="@+id/nav_About"
+            android:title="About" />
+    </group>
+
+    <group android:id="@+id/menu_bottom" android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_settings"
+            android:id="@+id/nav_Settings"
             android:title="Settings" />
         <item
-            android:id="@+id/nav_logout"
+            android:id="@+id/nav_Account"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_Logout"
             android:title="Logout" />
     </group>
 </menu>

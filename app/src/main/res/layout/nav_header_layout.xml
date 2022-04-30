@@ -12,11 +12,29 @@
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:paddingBottom="20dp"
         app:srcCompat="@drawable/logo"
         tools:srcCompat="@drawable/logo">
     </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Amber"
+        android:textColor="@color/customColourFour"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="3000 Points"
+        android:textColor="@color/customColourFive"
+        android:textSize="20dp">
+    </TextView>
 
 </LinearLayout>

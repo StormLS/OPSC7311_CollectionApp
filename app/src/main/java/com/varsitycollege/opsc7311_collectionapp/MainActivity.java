@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity
     void LogUserIn()
     {
         //progressBar.setVisibility(View.VISIBLE);
-        mAuth.signInWithEmailAndPassword(email .getText().toString(), password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>()
+        mAuth.signInWithEmailAndPassword(email.getText().toString().trim(), password.getText().toString().trim()).addOnCompleteListener(new OnCompleteListener<AuthResult>()
         {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)

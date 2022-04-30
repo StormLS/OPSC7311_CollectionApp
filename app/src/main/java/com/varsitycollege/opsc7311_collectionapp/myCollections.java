@@ -3,96 +3,31 @@ package com.varsitycollege.opsc7311_collectionapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
-
-import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class dashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
+public class myCollections extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
-    //Initializing all my variables here
+    //Initializing TOOLBAR variables
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggleOnOff;
     private NavigationView navigationView;
-
-    private ImageButton btn_mycollections;
-    private ImageButton btn_allcatagories;
-    private ImageButton btn_analytics;
-    private ImageButton btn_settings;
     //
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard_with_nav_drawer);
-
-        //---- findViewByID() & setOnClickListener() here for Dashboard variables ----
-        btn_mycollections = findViewById(R.id.btn_mycollections);
-        btn_allcatagories = findViewById(R.id.btn_allcatagories);
-        btn_analytics = findViewById(R.id.btn_analytics);
-        btn_settings = findViewById(R.id.btn_settings);
-
-        btn_mycollections.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Toast btn_mycollections_pressed = Toast.makeText(getApplicationContext(), "'My Collections' button was pressed.. do x", Toast.LENGTH_SHORT);
-                btn_mycollections_pressed.show();
-                Intent i = new Intent(dashboard.this, myCollections.class);
-                startActivity(i);
-                finish();
-            }
-        });
-
-        btn_allcatagories.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Toast btn_allcatagories_pressed = Toast.makeText(getApplicationContext(), "'All Catagories' button was pressed.. do x", Toast.LENGTH_SHORT);
-                btn_allcatagories_pressed.show();
-                // TODO: Intent i = new Intent(dashboard.this, allcatagories.class);
-                //       startActivity(i);
-            }
-        });
-
-        btn_analytics.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Toast btn_analytics_pressed = Toast.makeText(getApplicationContext(), "'Analytics' button was pressed.. do x", Toast.LENGTH_SHORT);
-                btn_analytics_pressed.show();
-                // TODO: Intent i = new Intent(dashboard.this, analytics.class);
-                //       startActivity(i);
-            }
-        });
-
-        btn_settings.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Toast btn_settings_pressed = Toast.makeText(getApplicationContext(), "'Settings' button was pressed.. do x", Toast.LENGTH_SHORT);
-                btn_settings_pressed.show();
-                // TODO: Intent i = new Intent(dashboard.this, settings.class);
-                //       startActivity(i);
-            }
-        });
-        //-----------------------------------------------------
+        setContentView(R.layout.activity_my_collections);
 
         //----- Code that manages and sets up the toolbar and the navigation of said tool bar -----
         toolbar = findViewById(R.id.nav_toolbar);
@@ -108,7 +43,7 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.bringToFront();
-        navigationView.setNavigationItemSelectedListener(this);
+        //navigationView.setNavigationItemSelectedListener(this);
         //-----------------------------------------------------------------------------------------
     }
 
@@ -178,5 +113,3 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
         return true;
     }
 }
-
-
