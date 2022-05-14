@@ -32,9 +32,382 @@
             android:theme="?attr/actionBarTheme"
             app:logo="@drawable/mycollections_logo"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <Button
+                android:id="@+id/btn_mycollectionsOne"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/custom_btn_mycollections_button_active"
+                android:text="All wines"
+                android:textColor="@color/white">
+            </Button>
+            <Button
+                android:id="@+id/btn_mycollectionsTwo"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/custom_btn_mycollections_button_notactive"
+                android:text="Add Wine"
+                android:textColor="@color/white">
+            </Button>
+            <Button
+                android:id="@+id/btn_mycollectionsThree"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/custom_btn_mycollections_button_notactive"
+                android:text="Favourites"
+                android:textColor="@color/white">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+                    <Button
+                        android:id="@+id/filter"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_btn_filter"
+                        android:text="Filter"
+                        android:textSize="10dp">
+                    </Button>
+                    <Button
+                        android:id="@+id/sortby"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_btn_sortby"
+                        android:text="Sort By"
+                        android:textSize="10dp">
+                    </Button>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="110dp"
+                    android:background="@color/customColourOne"
+                    android:src="@drawable/surname_icon">
+
+                </ImageButton>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Current number of wines: 7">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="4"
+                    android:columnCount="1"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:columnOrderPreserved="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/customColourFive"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/wine">
+                                </ImageView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="Red Red Red Wine!!!">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="This wine is made from the redyest grapes on the planet of earth.">
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp">
+
+                                    <Button
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:layout_gravity="center"
+                                        android:text="View"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/customColourFour"
+                                        android:background="@color/customColourFive">
+
+                                    </Button>
+
+                                    <Button
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:layout_gravity="center"
+                                        android:text="Edit"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/customColourFour"
+                                        android:background="@color/customColourFive">
+
+                                    </Button>
+                                    <ImageButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/heart_empty"
+                                        android:gravity="right"
+                                        android:background="@color/customColourFive">
+
+                                    </ImageButton>
+                                </LinearLayout>
 
 
 
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/customColourFive"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/champain">
+                                </ImageView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="Red Red Red Wine!!!">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="This wine is made from the redyest grapes on the planet of earth.">
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp">
+
+                                    <Button
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:layout_gravity="center"
+                                        android:text="View"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/customColourFour"
+                                        android:background="@color/customColourFive">
+
+                                    </Button>
+
+                                    <Button
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:layout_gravity="center"
+                                        android:text="Edit"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/customColourFour"
+                                        android:background="@color/customColourFive">
+
+                                    </Button>
+                                    <ImageButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/heart_empty"
+                                        android:gravity="right"
+                                        android:background="@color/customColourFive">
+
+                                    </ImageButton>
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/customColourFive"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/another_wine">
+                                </ImageView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="Red Red Red Wine!!!">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="This wine is made from the redyest grapes on the planet of earth.">
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp">
+
+                                    <Button
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:layout_gravity="center"
+                                        android:text="View"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/customColourFour"
+                                        android:background="@color/customColourFive">
+
+                                    </Button>
+
+                                    <Button
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:layout_gravity="center"
+                                        android:text="Edit"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/customColourFour"
+                                        android:background="@color/customColourFive">
+
+                                    </Button>
+                                    <ImageButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/heart_empty"
+                                        android:gravity="right"
+                                        android:background="@color/customColourFive">
+
+                                    </ImageButton>
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>

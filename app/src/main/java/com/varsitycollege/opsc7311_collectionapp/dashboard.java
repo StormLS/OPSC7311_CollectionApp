@@ -125,6 +125,9 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
         }
     }
 
+
+
+
     //Manages all the buttons on the Burger Menu; such as if a user presses any of these buttons
     // FAQ, Contact Us, Settings, Logout
     @Override

@@ -68,21 +68,19 @@ public class myCollections extends AppCompatActivity implements NavigationView.O
         switch(item.getItemId())
         {
             case R.id.nav_Home:
-                startActivity(new Intent(getApplicationContext(), dashboard.class));
-                finish();
+                startActivity(new Intent(this, dashboard.class));
+
                 return true;
 
-            case R.id.nav_Collections:
-                startActivity(new Intent(getApplicationContext(), myCollections.class));
-                finish();
-                return true;
 
             case R.id.nav_Categories:
                 //startActivity(new Intent(getApplicationContext(), myCategories.class));
+                startActivity(new Intent(this, dashboard.class));
                 return true;
 
             case R.id.nav_Analytics:
                 //startActivity(new Intent(getApplicationContext(), analytics.class));
+                startActivity(new Intent(this, dashboard.class));
                 return true;
 
             case R.id.nav_Contact:

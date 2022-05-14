@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OPSC7311_CollectionApp">
         <activity
+            android:name=".myCategories"
+            android:exported="false" />
+        <activity
             android:name=".myCollections"
             android:exported="false" />
         <activity

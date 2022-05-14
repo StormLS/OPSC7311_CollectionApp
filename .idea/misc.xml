@@ -6,13 +6,20 @@
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_dashboard_allcatagories.xml" value="0.204" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_dashboard_analytics.xml" value="0.204" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_dashboard_settings.xml" value="0.204" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_filter.xml" value="0.225" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_mycollections_button.xml" value="0.14" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_mycollections_button_Active.xml" value="0.225" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_mycollections_button_active.xml" value="0.21" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_mycollections_button_notactive.xml" value="0.2185" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_btn_sortby.xml" value="0.225" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/custom_button_dashboard.xml" value="0.204" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/drawable/login_container.xml" value="0.2295" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/account_created_dialog.xml" value="0.33" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
-        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_dashboard_with_nav_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_dashboard_with_nav_drawer.xml" value="0.18" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_my_collections.xml" value="0.25" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_my_categories.xml" value="0.33055555555555555" />
+        <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_my_collections.xml" value="0.18" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/activity_register_page.xml" value="0.33" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/content_dashboard.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/Storm/AndroidStudioProjects/OPSC7311_CollectionApp/app/src/main/res/layout/dashboard_with_nav_drawer.xml" value="0.32592592592592595" />
