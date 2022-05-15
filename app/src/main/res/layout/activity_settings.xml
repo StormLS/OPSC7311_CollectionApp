@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_background"
+    android:orientation="vertical"
+    tools:context=".Settings_Page">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="325dp"
+        android:layout_height="109dp"
+        android:src="@drawable/final_logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:src="@drawable/icon_settings_page" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingTop="5dp"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="72dp" />
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="2dp"
+            android:stateListAnimator="@null"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="295dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btnThemes"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="2dp"
+            android:stateListAnimator="@null"
+            android:text="Themes"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="295dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btnUserFeedback"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="2dp"
+            android:stateListAnimator="@null"
+            android:text="User feedback"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="295dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btnPrivacyPolicy"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-2dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="2dp"
+            android:stateListAnimator="@null"
+            android:text="Privacy Policy"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="295dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="2dp"
+            android:stateListAnimator="@null"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

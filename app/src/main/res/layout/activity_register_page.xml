@@ -87,7 +87,7 @@
             android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:drawableLeft="@drawable/icon_password"
+            android:drawableLeft="@drawable/icon_pass"
             android:drawablePadding="5dip"
             android:fontFamily="@font/poppins_regular"
             android:hint="Password"
