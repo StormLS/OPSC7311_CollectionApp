@@ -5,75 +5,82 @@
     android:id="@+id/loginPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_register_background"
     android:orientation="vertical"
-    android:background="@drawable/thewineconpendiumbackground"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/applicationLogo"
-        android:layout_width="325dp"
-        android:layout_height="120dp"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="25dp"
         android:layout_marginTop="40dp"
-        app:srcCompat="@drawable/logo"
-        tools:srcCompat="@drawable/logo">
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/final_logo"
+        tools:srcCompat="@drawable/final_logo">
 
     </ImageView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:elevation="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="60dp"
         android:background="@drawable/login_container"
         android:elevation="20dp"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/x1"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            app:startIconDrawable="@drawable/mail"
-            app:startIconContentDescription="test"
-            android:hint="Email"
-            android:minHeight="48dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
         <EditText
             android:id="@+id/email_input"
-            android:layout_width="200dp"
+            android:layout_width="227dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/icon_mail"
+            android:drawablePadding="10dip"
+            android:fontFamily="@font/poppins_regular"
             android:hint="Email"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/password_input"
-            android:layout_width="200dp"
+            android:layout_width="227dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="10dip"
+            android:fontFamily="@font/poppins_regular"
             android:hint="Password"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/btn_forgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:text="Forgot Password?"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Forgot password?"
+            android:textSize="12sp"
             android:textStyle="italic" />
 
         <Button
@@ -83,10 +90,11 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:background="@drawable/custom_button2"
-            android:text="Login"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Log in"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btn_register"
@@ -95,10 +103,11 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:background="@drawable/custom_button"
-            android:text="Register"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Sign up"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 </LinearLayout>

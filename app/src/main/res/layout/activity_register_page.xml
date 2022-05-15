@@ -5,73 +5,109 @@
     android:id="@+id/registerPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/thewineconpendiumbackground"
+    android:background="@drawable/login_register_background"
     android:orientation="vertical"
     tools:context=".registerPage">
 
+    <TextView
+        android:id="@+id/createaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="480dp"
+        android:layout_height="461dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/login_container"
         android:elevation="20dp"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:id="@+id/createaccount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Create Account"
-            android:textColor="@color/customColourOne"
-            android:textSize="24dp" />
-
-        <EditText
-            android:id="@+id/email_input"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:hint="Email"
-            android:minHeight="48dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <EditText
             android:id="@+id/name_input"
-            android:layout_width="200dp"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/icon_user_name_reg"
+            android:drawablePadding="5dip"
+            android:fontFamily="@font/poppins_regular"
             android:hint="Name"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
         <EditText
             android:id="@+id/surname_input"
-            android:layout_width="200dp"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:hint="Surname"
-            android:minHeight="48dp" />
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Last name"
+            android:minHeight="48dp"
+            android:paddingLeft="40dp"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_mail"
+            android:drawablePadding="5dip"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
         <EditText
             android:id="@+id/password_input"
-            android:layout_width="200dp"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="18dp"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="5dip"
+            android:fontFamily="@font/poppins_regular"
             android:hint="Password"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
 
         <EditText
             android:id="@+id/confirmPassword_input"
-            android:layout_width="200dp"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
             android:hint="Confirm Password"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:paddingLeft="40dp"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btn_register"
@@ -80,18 +116,27 @@
             android:layout_gravity="bottom"
             android:layout_marginTop="40dp"
             android:background="@drawable/custom_button"
+            android:fontFamily="@font/poppins_regular"
             android:text="Create"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
-        <TextView
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <Button
             android:id="@+id/btn_alreadyMember"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_gravity="center_horizontal"
-            android:text="I'm already a member"
-            android:textStyle="italic" />
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Back to login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
     </LinearLayout>
+
 </LinearLayout>
